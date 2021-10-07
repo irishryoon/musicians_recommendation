@@ -1,0 +1,13 @@
+*.ipynb_checkpoints
+*.DS_Store
+.cache
+network/*
+*.dot
+__pycache__*
+entrypoint.sh
+old_models/
+*.gitattributes
+graph_80000/hyperparameter_tuning_models/
+graph_80000/graph_min_degree_10.gml
+graph_80000/models_training/
+plot_example_graph.ipynb

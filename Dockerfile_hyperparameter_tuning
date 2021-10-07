@@ -1,0 +1,16 @@
+FROM python:3.8.3
+
+# dockerfile for Hyperparameter_tuning
+
+# create environment
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+# copy files
+COPY musicians.py hyperparameter_tuning.py ./
+
+RUN mkdir graph_80000
+RUN mkdir graph_80000/hyperparameter_tuning
+RUN mkdir graph_80000/hyperparameter_tuning/word2vec_train
+COPY graph_80000/graph_min_degree_10.gml graph_80000/
+COPY graph_80000/artist_by_degree.pkl graph_80000/
