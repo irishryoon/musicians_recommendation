@@ -2,7 +2,7 @@ FROM python:3.8.3
 
 # create environment
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # copy files
 COPY app.py artists.pickle artists_ID_80000.pkl word2vec.wordvectors word2vec.wordvectors.vectors.npy ./

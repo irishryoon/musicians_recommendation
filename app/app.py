@@ -67,5 +67,6 @@ def main():
 
     st.write("Creator: [Iris Yoon](https://irisyoon.org/)")
     st.write("Code: [github.com/irishryoon/musicians](https://github.com/irishryoon/musicians.git)")
+    st.write("Blog post: [medium](https://medium.com/@irishryoon/classical-musicians-recommender-22ee176daee8)")
 if __name__ == '__main__':
     main()
