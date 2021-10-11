@@ -3,7 +3,8 @@
 # Classical Musicians Recommender
 This repository contains code for a recommendation system of classical music performers. The recommender is based on the idea that musicians with frequent collaborations likely have similar performance styles. It first creates a graph of classical musicians and their collaborations and uses node2vec embeddings to find vector representations of the musicians. Given a list of users' favorite artists, the recommender uses similarity of the vector representations to recommend artists that a user may enjoy.
 
-The resulting recommender has been deployed as a web app: <a href="https://musicians-rec.herokuapp.com/">https://musicians-rec.herokuapp.com</a>
+The resulting recommender has been deployed as a web app: <a href="https://musicians-rec.herokuapp.com/">https://musicians-rec.herokuapp.com</a>  
+You can read my blog post about this project on <a href="https://medium.com/@irishryoon/classical-musicians-recommender-22ee176daee8">medium</a>.
 
 ## Problem statement
 Given a listener's favorite classical music performers, recommend other performers.  
