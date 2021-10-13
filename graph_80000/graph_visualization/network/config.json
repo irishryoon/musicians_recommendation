@@ -8,9 +8,9 @@
     "text": "Iris"
   },
   "text": {
-    "more": "Artist graph and communities",
-    "intro": "Artist graph",
-    "title": "Test"
+    "more": "",
+    "intro": "A graph representing artists and their collaborations",
+    "title": "Artist graph"
   },
   "legend": {
     "edgeLabel": "collaboration",
@@ -19,7 +19,7 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": false,
+    "groupSelectorAttribute": "community",
     "hoverBehavior": "default"
   },
   "informationPanel": {
