@@ -20,10 +20,12 @@ Note the stylistic difference in the performances. My goal was to build a recomm
 ## Solution overview
 * My solution is to build a recommender based on artists' collaboration patterns. It is based on the idea that two performers who have many collaborative recordings tend to have compatible performance styles.  
 * I used Spotify's API to build a graph representing classical musicians and their collaborations. Starting with my favorite artist 'Emil Gilels', I built the graph in a breadth-first search manner. Here is an example graph after exploring a few of Emil Gilel's albums.
- <img src="readme_files/graph.png" alt="drawing" width="600"/>
+<p align="center"> 
+<img src="readme_files/graph.png" alt="drawing" width="600"/>
+</p>
 For interactive exploration of the graph, click the image below.
-[<center><img src="http://irisyoon.org/images/graph.png" height ="300"></center>](http://irisyoon.org/musicians_recommendation/graph_80000/graph_visualization/network/)
 
+[<p align="center"><img src="readme_files/graph_big.png" height = "300"></p>](http://irisyoon.org/musicians_recommendation/graph_80000/graph_visualization/network/)
  
 * I then found an embedding of each musician via Node2Vec.
 * Given a user's favorite artists, the recommender first computes the average vector of the favorite artists and recommends artists whose vector representation is similar to the average. 
